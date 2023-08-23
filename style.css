@@ -1,5 +1,10 @@
+html {
+  height: 100%;
+}
+
 body {
   background-color: white;
+  height: 100%;
 }
 
 .navbar-brand {
@@ -9,9 +14,121 @@ body {
 .logo {
   margin-right: 20px;
   border-radius: 50%;
-  max-height: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 .nav-link {
   font-size: 1.25rem;
+}
+
+.gridWrap {
+  display: flex;
+  justify-content: center;
+  height: 60%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.contentWrap {
+  display: grid;
+  width: 75%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 33% 33% 34%;
+  grid-template-areas:
+    "intro coding"
+    "paragraph coding"
+    "button_1 coding";
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.hello {
+}
+
+.paragraph {
+  grid-area: paragraph;
+  margin-top: 5%;
+}
+
+.button_1 {
+  grid-area: button_1;
+  display: flex;
+}
+
+.hireMe {
+  margin-right: 1.5em;
+  height: 2.5em;
+  background-color: white;
+}
+
+.hireMe:hover {
+  filter: invert(1);
+  border: solid white 2px;
+}
+
+.viewMe {
+  height: 2.5em;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.viewMe:hover {
+  filter: invert(1);
+  border: solid white 2px;
+}
+
+.landingImage {
+  grid-area: coding;
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  margin-left: 20%;
+}
+
+#coding {
+  display: block;
+  border: solid 3px black;
+  width: 100%;
+  height: 82%;
+  /* padding: 20px; */
+  border-bottom-left-radius: 25%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 2px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.foot {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .gridWrap {
+    height: 72.7%;
+  }
+
+  .contentWrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+      "intro"
+      "coding"
+      "paragraph"
+      "button_1";
+  }
 }
