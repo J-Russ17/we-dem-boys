@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    /> -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="resume.css">
     <title>we dem boys resume</title>
 </head>
@@ -17,14 +18,48 @@
 <script src="https://kit.fontawesome.com/a686390b42.js" crossorigin="anonymous"></script>
 
 <body>
-    <nav>
-        <ul id="nav">
-            <li><a class="active" href="#about">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="index.html">Home</a></li>
-          </ul>
-    </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="headshot_2.jpg" />
+                Random Dude
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://google.com">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://google.com">My Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://google.com" aria-disabled="true"
+                    >Gallery</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://google.com" aria-disabled="true"
+                    >Contact Me</a
+                    >
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     <div class="container-resume">
         <div class="item header">
             <img class="header-img" src="https://cdn.britannica.com/28/182628-050-F8B519A4/Carl-Jung.jpg" width="150px" height="175px" alt="" />
@@ -40,7 +75,7 @@
             <i class="fa-solid fa-phone"></i>
             <h4>123-456-7890</h4><Br><br>
             <i class="fa-solid fa-envelope"></i>
-            <h4>carl.jung@gmail.com</h4><br><br>
+            <h4>carl.jung @ gmail.com</h4><br><br>
             <i class="fa-brands fa-linkedin"></i>
             <a href="https://www.linkedin.com/feed/"><h4>LinkedIn</h4> </a>
             <br><br>
@@ -55,26 +90,36 @@
         <div class="item history">
             <h3> WORK HISTORY<hr></h3>
             <ul>
-                <li> MCDONALDS - 1972-1978 Managed a team of employees</li><br>
-                <li> HARVARD - Teached a lot of game.</li><br>
-                <li>FORDHAM UNIVERSITY - Tought schology to students.</li>
+                <li class="box"> MCDONALDS - 1972-1978 Managed a team of employees</li>
+                <li class="box"> HARVARD - Teached a lot of game.</li>
+                <li class="box">FORDHAM UNIVERSITY - Tought schology to students.</li>
             </ul>
         </div>
         <div class="item education">
             <h3>EDUCATION<hr></h3>
             <h4>HONORARY DOCTORATES FROM:</h4>
             <ul>
-                <li>Clark University - 1909</li>
-                <li>Fordham University - 1912</li>
-                <li>Harvard University - 1923</li>
-                <li>Univeristy of Allahabad - 1931</li>
+                <li class="box">Clark University - 1909</li>
+                <li class="box">Fordham University - 1912</li>
+                <li class="box">Harvard University - 1923</li>
+                <li class="box">Univeristy of Allahabad - 1931</li>
             </ul>
         </div>
     </div>
-    <!-- <script
+    <footer>
+        <p id="copyright">© 2023 by Random Dude Inc. All rights reserved.</p>
+        <div class="foot">
+          <div id="socials">
+            <a href="https://twitter.com/"><img id="twitter" src="twitter-dark.jpg" /></a>
+            <a href="https://facebook.com/"><img id="facebook" src="facebook-dark.jpg" /></a>
+            <a href="https://pinterest.com/"><img id="pinterest" src="pinterest-dark.jpg" /></a>
+          </div>
+        </div>
+      </footer>
+    <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"
-      ></script> -->
+    ></script>
 </body>
 </html>

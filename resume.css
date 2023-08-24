@@ -1,24 +1,24 @@
 /* nav bar styles */
-/* body {
+body {
     body {
         background-color: white;
-      }
-      
-      .navbar-brand {
+    }
+    
+    .navbar-brand {
         font-size: 3rem;
-      }
-      
-      .logo {
+    }
+    
+    .logo {
         margin-right: 20px;
         border-radius: 50%;
         max-height: 100px;
-      }
-      
-      .nav-link {
+    }
+    
+    .nav-link {
         font-size: 1.25rem;
-      }
+    }
 }
- */
+
 .container-resume {
     display: grid;
     min-width: 300px;
@@ -34,7 +34,7 @@
     "history"
     "education" ;
 } 
-body {
+/* body {
     margin-top: 4rem;
 }
 nav {
@@ -47,7 +47,7 @@ nav {
         top: 0;
         width: 100%;
 }
- #nav li {
+#nav li {
         list-style-type: none;
         float: right;
 }
@@ -62,7 +62,7 @@ nav, li a {
 
 li a:hover {
         background-color: #111;
-}
+} */
 
 .header {
     text-align:center;
@@ -106,7 +106,6 @@ p {
     display: flex;
     flex-direction: row;
     font-family: monospace;
-    widt: 500px;
 }
 ul {
     font-family: monospace;
@@ -140,10 +139,14 @@ h4 {
 }
 
 .skills {
+    display: flex;
+    flex-direction: column;
     grid-area: skills;
     grid-row: 3/4;
     grid-column: 2;
     padding-left: 10px;
+    overflow:hidden
+    
 }
 
 .history {
@@ -163,7 +166,6 @@ h4 {
 /* OTHER STYLES */
 body {
     background-color: rgb(206, 230, 228);
-    display: flex;
     justify-content: center;
     padding: 20px;
 }
@@ -181,10 +183,39 @@ a {
     color: black;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid 2px;
+    height: 80px;
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+
+.foot {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+#twitter,
+#facebook,
+#pinterest {
+    margin: 0 5px;
+    max-width: 40px;
+    height: auto;
+    border: solid 2px white;
+}
+
 
 
 /* Media Query for Mobile Phones */
-@media (max-width: 40em) {
+@media (max-width: 576px) {
     .container-resume {
         grid-template-areas: 
             "header"
@@ -200,7 +231,10 @@ a {
     .header {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
+        align-content: space-around;
+        
     }
     h1 {
         padding: 0px 0px 0px 0px;
@@ -216,7 +250,11 @@ a {
         flex-shrink: 1;
     }
     p {
+        font-size: .9em;
         margin: 0;
+    }
+    .box {
+        font-size: .9em;
     }
     .explainer {
         display: flex;
