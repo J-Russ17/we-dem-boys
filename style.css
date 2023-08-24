@@ -117,7 +117,16 @@ footer {
   height: 100%;
 }
 
-@media (max-width: 576px) {
+#twitter,
+#facebook,
+#pinterest {
+  margin: 0 5px;
+  max-width: 40px;
+  height: auto;
+  border: solid 2px white;
+}
+
+@media (max-width: 671px) {
   .gridWrap {
     height: 72.7%;
   }
@@ -130,5 +139,10 @@ footer {
       "coding"
       "paragraph"
       "button_1";
+  }
+
+  #coding {
+    max-width: 100%;
+    height: auto;
   }
 }
