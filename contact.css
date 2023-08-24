@@ -31,10 +31,37 @@
   h1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 155px;
+    font-style: italic;
   }
-
+ 
+  h2{
+    margin-bottom: 70px;
+    font-weight: bolder;
+  }
+h3 {
+  font-weight: bolder;
+}
   .parallax {
-    
+  
+    opacity: 0.65;
+    background-image: url("https://img.freepik.com/free-photo/laptop-with-many-envelopes_1134-191.jpg?w=1060&t=st=1692304502~exp=1692305102~hmac=1160f0f097eaeef9833b1dfc604b1d86bde06622170a01c10befb9e48aafc0e3");
+    min-height: 500px; 
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .parallax2 {
+    opacity: 0.65;
+    background-image: url(./pictures/contactme3.jpg);
+    min-height: 500px; 
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   body {
@@ -59,4 +86,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 400px;
+  background-attachment: scroll;
+  color: white;
+  
+  }
+.contactpic{
+height: 350px;
+}
+
+.text{
+  position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.social {
+  font-size: 40px;
+}
+
+  @media only screen and (max-device-width: 1366px) 
+  {   .parallax {
+      background-attachment: scroll;
+  }
+    
+  @media only screen and (max-width: 523px) 
+  {
+    .navbar-brand {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 321px) 
+  {
+    .logo
+    {
+      max-height: 50px;
+    }
+    }
   }
