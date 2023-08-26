@@ -31,10 +31,11 @@
 
   h1 {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 155px;
+    margin-left: 15px;
     font-style: italic;
-    font-size: 75px;
+    font-size: 40px;
   }
  
   h2 {
@@ -42,12 +43,42 @@
     font-weight: bolder;
     text-shadow: 0 0 5px black;
     color: white;
+    display: flex;
+    justify-content: center;
   }
 h3 {
   font-weight: bolder;
   text-shadow: 0 0 5px black;
-  color: white
+  color: white;
+  display: flex;
+    justify-content: center;
+
 }
+h4 {
+  font-weight: bolder;
+  text-shadow: 0 0 5px black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+a {
+  display: flex;
+  justify-content: center;
+  color:white;
+ 
+
+  
+}
+ p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+.social {
+  margin-left: 35px;
+}
+
+
   .parallax {
   
     opacity: 0.65;
@@ -58,6 +89,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: left;
     
   }
   .parallax2 {
