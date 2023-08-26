@@ -7,7 +7,7 @@
   }
   
   
-  .topnav a {
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: right;
@@ -17,45 +17,53 @@
   }
   
   
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #ddd;
     color: grey;
   }
   
  
-  .topnav a.active {
+.topnav a.active {
     background-color: #04AA6D;
     color: white;
   }
+
 
   h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 155px;
     font-style: italic;
+    font-size: 75px;
   }
  
-  h2{
+  h2 {
     margin-bottom: 70px;
     font-weight: bolder;
+    text-shadow: 0 0 5px black;
+    color: white;
   }
 h3 {
   font-weight: bolder;
+  text-shadow: 0 0 5px black;
+  color: white
 }
   .parallax {
   
     opacity: 0.65;
-    background-image: url("https://img.freepik.com/free-photo/laptop-with-many-envelopes_1134-191.jpg?w=1060&t=st=1692304502~exp=1692305102~hmac=1160f0f097eaeef9833b1dfc604b1d86bde06622170a01c10befb9e48aafc0e3");
+    /* background-image: url("https://img.freepik.com/free-photo/laptop-with-many-envelopes_1134-191.jpg?w=1060&t=st=1692304502~exp=1692305102~hmac=1160f0f097eaeef9833b1dfc604b1d86bde06622170a01c10befb9e48aafc0e3"); */
+    background-image: url(./pictures/city1.jpg);
     min-height: 500px; 
     position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
   }
   .parallax2 {
     opacity: 0.65;
-    background-image: url(./pictures/contactme3.jpg);
+    background-image: url(https://img.freepik.com/free-photo/laptop-with-many-envelopes_1134-191.jpg?w=1060&t=st=1692304502~exp=1692305102~hmac=1160f0f097eaeef9833b1dfc604b1d86bde06622170a01c10befb9e48aafc0e3);
     min-height: 500px; 
     position: relative;
     background-attachment: fixed;
@@ -64,9 +72,17 @@ h3 {
     background-size: cover;
   }
 
-  body {
-    background-color: white;
+.parallax3 {
+  opacity: 0.65;
+    background-image: url(./pictures/contactme2.jpg);
+    min-height: 500px; 
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
   
   .navbar-brand {
     font-size: 3rem;
@@ -99,11 +115,11 @@ h3 {
   color: white;
   
   }
-.contactpic{
+.contactpic {
 height: 350px;
 }
 
-.text{
+.text {
   position: absolute;
     left: 0;
     top: 50%;
@@ -114,6 +130,7 @@ height: 350px;
 
 .social {
   font-size: 40px;
+  color: black;
 }
 
   @media only screen and (max-device-width: 1366px) 
