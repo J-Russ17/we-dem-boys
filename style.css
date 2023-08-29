@@ -126,6 +126,12 @@ footer {
   border: solid 2px white;
 }
 
+#twitter:hover,
+#facebook:hover,
+#pinterest:hover {
+  filter: invert(1);
+}
+
 @media (max-width: 671px) {
   .gridWrap {
     height: 72.7%;
